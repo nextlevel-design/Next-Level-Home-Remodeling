@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110d">
+  <meta name="description" content="Next Level Home Remodeling offers home renovation, kitchen and bathroom remodeling, basement finishing, flooring, painting, roofing, and more in Connecticut and surrounding states. Call for a free estimate.">
+  <title>Next Level Home Remodeling | Waterbury, CT</title>
+  <style>
+    :root{--ink:#11120f;--panel:#1a1c17;--lime:#c8a96a;--white:#f8f9f5;--muted:#b9bdb2;--line:#34372e}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .topbar{background:var(--lime);color:#14160d;font-size:.88rem;font-weight:700}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0}
+    header{position:sticky;top:0;z-index:10;background:rgba(17,18,15,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .mark{width:49px;height:49px;border:2px solid var(--lime);border-radius:50%;display:grid;place-items:center;flex-shrink:0;color:var(--lime);font-size:25px;font-weight:900;position:relative}
+    .mark:after{content:"";position:absolute;inset:5px;border:1px dashed var(--lime);border-radius:50%}
+    .brand-name{font-size:1rem;font-weight:900;line-height:1.08;letter-spacing:.03em;text-transform:uppercase}
+    .brand-name span{display:block;color:var(--lime);font-size:.72rem;letter-spacing:.2em;margin-top:5px}
+    .navlinks{display:flex;align-items:center;gap:22px}
+    .navlinks a{text-decoration:none;color:#e6e8e1;font-weight:700;font-size:.92rem}
+    .navlinks a:hover{color:var(--lime)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;background:var(--lime);color:#17190f;text-decoration:none;font-weight:900;border-radius:5px;border:2px solid var(--lime);transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:#d8ff47}
+    .btn.outline{background:transparent;color:var(--white);border-color:#676b5d}
+    .btn.outline:hover{border-color:var(--lime);color:var(--lime)}
+    .menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;padding:9px 11px;border-radius:4px;font-size:1.15rem}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 25%,rgba(200,169,106,.12),transparent 36%),linear-gradient(115deg,#10110d 0%,#191b15 64%,#10110d 100%);padding:88px 0 78px;border-bottom:1px solid var(--line)}
+    .hero:after{content:"";position:absolute;right:-70px;bottom:-160px;width:480px;height:480px;border:1px solid rgba(200,169,106,.18);border-radius:50%;box-shadow:0 0 0 35px rgba(200,169,106,.025),0 0 0 75px rgba(200,169,106,.02);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--lime);font-size:.8rem;letter-spacing:.19em;text-transform:uppercase;font-weight:900}
+    .eyebrow:before{content:"";width:30px;height:2px;background:var(--lime)}
+    h1{font-size:clamp(2.7rem,6vw,5.4rem);line-height:.99;letter-spacing:-.055em;margin:18px 0 22px;max-width:760px}
+    h1 span{color:var(--lime)}
+    .hero p{font-size:1.12rem;color:#d1d4ca;max-width:620px;margin:0 0 28px}
+    .hero p.slogan{font-size:clamp(1.12rem,2.1vw,1.5rem);font-weight:900;letter-spacing:.015em;color:var(--lime);margin:-8px 0 18px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-card{background:linear-gradient(145deg,#252820,#171913);border:1px solid #414536;padding:30px;border-radius:8px;box-shadow:0 25px 60px rgba(0,0,0,.3);position:relative}
+    .hero-card:before{content:"";position:absolute;left:0;top:24px;bottom:24px;width:3px;background:var(--lime)}
+    .hero-card .badge{color:var(--lime);font-weight:900;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+    .hero-card h2{font-size:1.75rem;line-height:1.15;margin:12px 0}
+    .hero-card p{font-size:.98rem;margin-bottom:20px}
+    .checklist{padding:0;margin:0;list-style:none}
+    .checklist li{padding:9px 0;border-top:1px solid #383b31;color:#e7e9e2}
+    .checklist li:before{content:"✓";color:var(--lime);font-weight:900;margin-right:10px}
+    .strip{background:#c8a96a;color:#15170e}
+    .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:19px 0}
+    .strip strong{display:block;font-size:1.03rem}
+    .strip span{font-size:.87rem}
+    section{padding:78px 0}
+    .section-head{max-width:680px;margin-bottom:34px}
+    .section-head h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.05;letter-spacing:-.04em;margin:12px 0}
+    .section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:linear-gradient(145deg,#20221b,#171812);border:1px solid var(--line);padding:25px;border-radius:7px;min-height:190px;transition:transform .22s,border-color .22s,box-shadow .22s}
+    .service:hover{transform:translateY(-4px);border-color:rgba(200,169,106,.65);box-shadow:0 18px 34px rgba(0,0,0,.2)}
+    .service .num{color:var(--lime);font-size:.8rem;letter-spacing:.15em;font-weight:900}
+    .service h3{font-size:1.22rem;margin:11px 0 8px}
+    .service p{color:var(--muted);margin:0;font-size:.96rem}
+    .about{background:#f0f1eb;color:#171912}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
+    .about-art{min-height:330px;border-radius:8px;background:linear-gradient(145deg,rgba(200,169,106,.85),rgba(200,169,106,.12)),repeating-linear-gradient(135deg,#24271e 0,#24271e 2px,#2d3026 2px,#2d3026 12px);display:flex;align-items:flex-end;padding:28px;position:relative;overflow:hidden}
+    .about-art:before{content:"NL";font-size:clamp(6rem,16vw,12rem);font-weight:900;line-height:.8;letter-spacing:-.1em;color:rgba(255,255,255,.9);position:absolute;top:25px;right:25px}
+    .about-art strong{position:relative;z-index:1;color:#171912;font-size:1.5rem;max-width:260px;line-height:1.1;text-transform:uppercase}
+    .about .section-head{margin:0}
+    .about .section-head p{color:#4c5045}
+    .about-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+    .about-points div{border-top:2px solid var(--lime);padding-top:10px;font-weight:800}
+    .cta{background:radial-gradient(ellipse at 80% 50%,rgba(200,169,106,.13),transparent 40%),#171912}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px solid #3c4033;border-radius:8px;padding:34px}
+    .cta h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;margin:0 0 12px;letter-spacing:-.04em}
+    .cta p{color:var(--muted);margin:0;max-width:650px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+    .contact-panel{background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:8px}
+    .contact-row{padding:16px 0;border-bottom:1px solid var(--line)}
+    .contact-row:last-child{border:0}
+    .contact-row small{display:block;color:var(--lime);font-weight:900;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+    .contact-row a,.contact-row span{font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+    .contact-row a:hover{color:var(--lime)}
+    .note{color:var(--muted);font-size:.9rem}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.9rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:800px){
+      .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#171912;padding:18px 20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:16px}
+      .navlinks.open{display:flex}.navlinks .btn{text-align:center}.menu-btn{display:block}
+      .hero{padding:64px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-grid{gap:30px}.hero-card{max-width:600px}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .about-grid{gap:30px}.about-art{min-height:260px}
+      .cta-inner{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:520px){
+      .wrap{width:min(100% - 28px,1120px)}
+      .topbar .wrap{font-size:.78rem}
+      .brand-name{font-size:.86rem}.mark{width:43px;height:43px}
+      .hero{padding:52px 0}.hero p{font-size:1rem}
+      .actions .btn{width:100%}
+      .strip .wrap{grid-template-columns:1fr;gap:10px;padding:15px 0}
+      section{padding:58px 0}
+      .services{grid-template-columns:1fr}
+      .service{min-height:auto}
+      .about-points{grid-template-columns:1fr}
+      .cta-inner,.contact-panel{padding:22px}
+    }
+
+    /* Premium refresh: deep navy, warm ivory, and restrained champagne gold. */
+    :root{--ink:#101d2b;--panel:#ffffff;--lime:#c8a96a;--white:#f8f6f1;--muted:#626b75;--line:#d9dce0}
+    body{background:#f7f5f0;color:#182433}
+    header{background:rgba(16,29,43,.97);border-bottom-color:#29394b}
+    .topbar{background:#c8a96a;color:#172232}
+    .topbar a{color:#172232;font-weight:900;text-decoration:none}
+    .brand-name{color:#fff}
+    .brand-name span{color:#d9bd86}
+    .mark{border-color:#c8a96a;color:#d9bd86}
+    .mark:after{border-color:#c8a96a}
+    .navlinks a{color:#edf0f4}
+    .navlinks a:hover{color:#e0c28b}
+    .btn{background:#c8a96a;border-color:#c8a96a;color:#152233;box-shadow:0 5px 14px rgba(9,20,32,.12)}
+    .btn:hover{background:#d8bd8b;border-color:#d8bd8b}
+    .btn.outline{color:#fff;border-color:#8e9aa7}
+    .btn.outline:hover{border-color:#d8bd8b;color:#e3c993}
+    .hero{background:radial-gradient(ellipse at 80% 20%,rgba(200,169,106,.16),transparent 38%),linear-gradient(115deg,#101d2b 0%,#172b40 65%,#101d2b 100%);border-bottom-color:#29394b}
+    .hero:after{border-color:rgba(200,169,106,.22);box-shadow:0 0 0 35px rgba(200,169,106,.035),0 0 0 75px rgba(200,169,106,.025)}
+    .eyebrow{color:#c8a96a}
+    .eyebrow:before{background:#c8a96a}
+    h1 span{color:#d9bd86}
+    /* High-contrast hero typography: ivory headline, pale blue-white supporting text, champagne emphasis. */
+    .hero h1{color:#f8f6f1}
+    .hero h1 span{color:#e3c993}
+    .hero p{color:#e1e8ef}
+    .hero p.slogan{color:#f0d7a6}
+    .section-head .eyebrow{color:#96743d}
+    .section-head .eyebrow:before{background:#96743d}
+    .about .section-head .eyebrow{color:#80602e}
+    .about .section-head .eyebrow:before{background:#80602e}
+    .hero p{color:#dce3ea}
+    .hero p.slogan{color:#f7e6bf;background:rgba(200,169,106,.12);border-left:4px solid #c8a96a;padding:12px 16px;border-radius:0 6px 6px 0;display:block;width:fit-content;max-width:100%;line-height:1.35;margin:0 0 22px;text-shadow:0 1px 0 rgba(0,0,0,.15)}
+    .hero-card{background:linear-gradient(145deg,#20364b,#17283a);border-color:#405166;box-shadow:0 25px 60px rgba(0,0,0,.24)}
+    .hero-card .badge{color:#e0c28b}
+    .checklist li{border-top-color:#35495d;color:#e9edf1}
+    .checklist li:before{color:#d9bd86}
+    .strip{background:#e8dfd0;color:#172638;border-top:1px solid #d8c9af;border-bottom:1px solid #d8c9af}
+    #services{background:#f7f5f0}
+    .section-head h2{color:#172638}
+    .section-head p{color:#626b75}
+    .service{background:#fff;border-color:#e0e2e5;box-shadow:0 8px 24px rgba(16,29,43,.045)}
+    .service:hover{border-color:#c8a96a;box-shadow:0 18px 34px rgba(16,29,43,.10)}
+    .service .num{color:#96743d}
+    .service h3{color:#172638}
+    .service p{color:#626b75}
+    .about{background:#eee9df;color:#172638}
+    .about .section-head p{color:#515c67}
+    .about-art{background:linear-gradient(145deg,rgba(200,169,106,.84),rgba(200,169,106,.16)),repeating-linear-gradient(135deg,#172638 0,#172638 2px,#20364b 2px,#20364b 12px)}
+    .about-art strong{color:#172638}
+    .about-points div{border-top-color:#b08b4f}
+    .cta{background:radial-gradient(ellipse at 80% 50%,rgba(200,169,106,.15),transparent 42%),#101d2b}
+    .cta-inner{border-color:#405166}
+    .cta h2{color:#f8f6f1}
+    .cta p{color:#d1d9e0}
+    #contact{background:#f7f5f0}
+    .contact-panel{background:#fff;border-color:#e0e2e5;box-shadow:0 8px 24px rgba(16,29,43,.045)}
+    .contact-panel h3{color:#172638}
+    .contact-row{border-bottom-color:#e3e5e8}
+    .contact-row small{color:#96743d}
+    .contact-row a,.contact-row span{color:#172638}
+    .contact-row a:hover{color:#96743d}
+    .note{color:#626b75}
+    footer{background:#101d2b;border-top-color:#29394b;color:#c4ccd4}
+    footer a{color:#e0c28b}
+    @media(max-width:800px){.navlinks{background:#101d2b;border-bottom-color:#29394b}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap"><span>SERVING CONNECTICUT &amp; SURROUNDING STATES · FREE ESTIMATES</span><span>FREE ESTIMATES · CALL <a href="tel:+12035786317"> (203) 578-6317</a></span></div>
+  </div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Next Level Home Remodeling home">
+        <span class="mark" aria-hidden="true">⌂</span>
+        <span class="brand-name">Next Level <span>Home Remodeling</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="btn" href="tel:+12035786317">Call for a Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Built with care. Finished with pride.</div>
+          <h1>Take Your Home to the <span>Next Level.</span></h1>
+          <p class="slogan">No job is too small. No job is too big.</p>
+          <p>From a single-room refresh to a complete renovation, we bring thoughtful planning, quality-focused workmanship, and attention to every detail. Serving homeowners and businesses throughout Connecticut and surrounding states. Free estimates are available for your project.</p>
+          <div class="actions">
+            <a class="btn" href="tel:+12035786317">☎ Call (203) 578-6317</a>
+            <a class="btn outline" href="#services">Explore Our Services <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <div class="badge">Your project starts here</div>
+          <h2>Let’s talk about what you have in mind.</h2>
+          <p>Contact us to discuss your renovation goals and arrange a property visit for a free estimate.</p>
+          <ul class="checklist">
+            <li>Residential remodeling</li><li>Commercial renovation</li><li>Roofing &amp; structural work</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="wrap">
+        <div><strong>Free Estimates</strong><span>Start with a conversation</span></div>
+        <div><strong>Home &amp; Commercial</strong><span>Projects large and small</span></div>
+        <div><strong>Regional Service</strong><span>Connecticut &amp; surrounding states</span></div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2>Practical upgrades. Beautiful results.</h2>
+          <p>Whether you’re refreshing one room or planning a larger renovation, tell us what you want to improve and we’ll help you take the next step.</p>
+        </div>
+        <div class="services">
+          <article class="service"><div class="num">01 / INTERIORS</div><h3>Whole-Home Renovation</h3><p>Bring rooms together with a coordinated renovation tailored to your home and goals.</p></article>
+          <article class="service"><div class="num">02 / KITCHENS</div><h3>Kitchen Remodeling</h3><p>Refresh the heart of your home with a more functional, welcoming kitchen.</p></article>
+          <article class="service"><div class="num">03 / BATHROOMS</div><h3>Bathroom Remodeling</h3><p>Update your bathroom with a layout and finishes that fit your everyday routine.</p></article>
+          <article class="service"><div class="num">04 / BASEMENTS</div><h3>Basement Finishing</h3><p>Make more of your existing space with a basement planned around your needs.</p></article>
+          <article class="service"><div class="num">05 / FINISHES</div><h3>Flooring &amp; Painting</h3><p>Give your rooms a fresh look with updated floors, paint, and finishing details.</p></article>
+          <article class="service"><div class="num">06 / EXTERIORS</div><h3>Exterior Renovation</h3><p>Improve the appearance and function of your property’s exterior.</p></article>
+          <article class="service"><div class="num">07 / COMMERCIAL</div><h3>Commercial Renovation</h3><p>Renovation support for commercial buildings and business spaces.</p></article>
+          <article class="service"><div class="num">08 / ROOFING</div><h3>Roofing</h3><p>Discuss roofing needs and the right next steps for your property.</p></article>
+          <article class="service"><div class="num">09 / STRUCTURE</div><h3>Structural Work</h3><p>Talk with us about your structural project and the scope of work needed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-art"><strong>A better space begins with a better plan.</strong></div>
+        <div class="section-head">
+          <div class="eyebrow">The next step starts here</div>
+          <h2>Your vision. Your space. A fresh start.</h2>
+          <p>Every renovation begins with understanding what matters to you. Share your ideas, priorities, and goals with Next Level Home Remodeling, and let’s discuss how to move your project forward.</p>
+          <div class="about-points">
+            <div>Clear project conversations</div><div>Residential &amp; commercial work</div><div>Free estimate inquiries</div><div>Local contact in Waterbury, CT</div>
+          </div>
+          <div style="margin-top:26px"><a class="btn" href="#contact">Discuss Your Project →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-inner">
+        <div><h2>Ready to improve your space?</h2><p>From small updates to major renovations, no job is too small or too big. Call to discuss your project and request a free estimate across Connecticut and surrounding states.</p></div>
+        <a class="btn" href="tel:+12035786317">Call (203) 578-6317</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Get in touch</div>
+          <h2>Let’s talk about your project.</h2>
+          <p>Reach out to discuss your renovation and request a free estimate. We serve Connecticut and surrounding states; contact us to confirm service availability for your location.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <div class="contact-row"><small>Call us</small><a href="tel:+12035786317">+1 (203) 578-6317</a></div>
+            <div class="contact-row"><small>Location</small><span>598 Oronoke Rd, Waterbury, CT 06078</span></div>
+            <div class="contact-row"><small>Service area</small><span>Connecticut and surrounding states</span></div>
+            <div class="contact-row"><small>Estimates</small><span>Contact us to discuss a free estimate.</span></div>
+          </div>
+          <div class="contact-panel">
+            <h3 style="margin-top:0">Tell us about your project</h3>
+            <p class="note">The quickest way to reach us is by phone. Tap below to call from your mobile device.</p>
+            <a class="btn" style="width:100%;margin-top:10px" href="tel:+12035786317">☎ Call Now</a>
+            <p class="note" style="margin-top:18px">Website contact forms and email can be added once the owner provides an email address and preferred lead destination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© <span id="year"></span> Next Level Home Remodeling. All rights reserved.</span><span>Connecticut &amp; surrounding states · <a href="tel:+12035786317">(203) 578-6317</a></span></div></footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
